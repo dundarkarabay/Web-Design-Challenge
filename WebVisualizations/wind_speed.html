@@ -14,14 +14,13 @@
     <link rel="stylesheet" href="style.css">  
 </head>
 <body class="body">
-        
     <nav class="navbar navbar-expand-lg navbar-light navbar_padding">
         <a style="color:white" class="navbar-brand navbar_latitude">Latitude</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse navbar_styling" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-sm-auto d-none d-sm-flex navbar_styling">
                 <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Plots
@@ -42,70 +41,54 @@
             </ul>
         </div>            
     </nav>                   
-    <div class="parent-container d-flex">
-        <div class="container index_container1_specs">
-            <div class="row">
-                <div class="col">
-                    <br>
-                    <h3 style="color:teal">
-                        Latitude vs. Wind Speed
-                    </h3>
-                    <hr> 
-                    <section id="index_main">
-                        <section id="index_figure">
-                            <img id="index_main_image" src="Resources/assets/images/Fig4.png" alt="Latitue vs. Wind Speed">
-                        </section>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem esse aspernatur quasi odit, reprehenderit doloremque voluptatem consectetur expedita ducimus tenetur autem. Eaque numquam illo sequi odio fugiat unde, labore eligendi.                        
-                        </p>
-                    </section>
-                </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 column1_specs">
+                <br>
+                <h3 style="color:teal">
+                    Latitude vs. Wind Speed
+                </h3>
+                <hr> 
+                <section>
+                    <img id="main_image" src="Resources/assets/images/Fig4.png" alt="Latitue vs. Wind Speed">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem esse aspernatur quasi odit, reprehenderit doloremque voluptatem consectetur expedita ducimus tenetur autem. Eaque numquam illo sequi odio fugiat unde, labore eligendi.                        
+                    </p>
+                </section>
+            </div>
+            <div class="col-lg-4 offset-lg-1 column2_specs">
+                <br>            
+                <h4 style="color:teal">
+                    Visualizations
+                </h4>
+                <hr>
+                <figure class="figure">
+                    <figcaption class="figure-caption figure_caption" style="color:teal">Max Temperature</figcaption>
+                    <a href="max_temperature.html">
+                        <img width="160" height="160" src="Resources/assets/images/Fig1.png" class="figure-img img-fluid rounded" alt="Latitue vs. Max Temperature">
+                    </a>
+                </figure>
+                <figure class="figure">
+                    <figcaption class="figure-caption figure_caption" style="color:teal">Humidity</figcaption>
+                    <a href="humidity.html">
+                        <img width="160" height="160" src="Resources/assets/images/Fig2.png" class="figure-img img-fluid rounded" alt="Latitue vs. Humidity">
+                    </a>
+                </figure>
+                <figure class="figure">
+                    <figcaption class="figure-caption figure_caption" style="color:teal">Cloudiness</figcaption>
+                    <a href="cloudiness.html">
+                        <img width="160" height="160" src="Resources/assets/images/Fig3.png" class="figure-img img-fluid rounded" alt="Latitue vs. Cloudiness">
+                    </a>
+                </figure>
+                <figure class="figure">
+                    <figcaption class="figure-caption figure_caption" style="color:teal">Wind Speed</figcaption>
+                    <a href="wind_speed.html">
+                        <img width="160" height="160" src="Resources/assets/images/Fig4.png" class="figure-img img-fluid rounded" alt="Latitue vs. Wind Speed">
+                    </a>
+                </figure>        
             </div>
         </div>
-        <div class="container separation"></div>
-        <div class="container index_container2_specs">            
-            <br>
-            <h4 style="color:teal">
-                Visualizations
-            </h4>
-            <hr>
-            <div class="row">
-                <div class="col-lg-6">
-                    <figure class="figure">
-                        <figcaption class="figure-caption figure_caption" style="color:teal">Max Temperature</figcaption>
-                        <a href="max_temperature.html">
-                            <img width="350" height="300" src="Resources/assets/images/Fig1.png" class="figure-img img-fluid rounded" alt="Latitue vs. Max Temperature">
-                        </a>
-                    </figure>
-                </div>
-                <div class="col-lg-6">
-                    <figure class="figure">
-                        <figcaption class="figure-caption figure_caption" style="color:teal">Humidity</figcaption>
-                        <a href="humidity.html">
-                            <img width="350" height="300" src="Resources/assets/images/Fig2.png" class="figure-img img-fluid rounded" alt="Latitue vs. Humidity">
-                        </a>
-                    </figure>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <figure class="figure">
-                        <figcaption class="figure-caption figure_caption" style="color:teal">Cloudiness</figcaption>
-                        <a href="cloudiness.html">
-                            <img width="350" height="300" src="Resources/assets/images/Fig3.png" class="figure-img img-fluid rounded" alt="Latitue vs. Cloudiness">
-                        </a>
-                    </figure>
-                </div>
-                <div class="col-lg-6">
-                    <figure class="figure">
-                        <figcaption class="figure-caption figure_caption" style="color:teal">Wind Speed</figcaption>
-                        <a href="wind_speed.html">
-                            <img width="350" height="300" src="Resources/assets/images/Fig4.png" class="figure-img img-fluid rounded" alt="Latitue vs. Wind Speed">
-                        </a>
-                    </figure>
-                </div>
-            </div>        
-        </div>        
-    </div>
+    </div>        
 </body>
-</html>
+</html>                        
